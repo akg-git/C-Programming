@@ -1,0 +1,21 @@
+#include<stdio.h>
+void main()
+{
+ int n,cd=0;
+ printf("Enter a number :");
+ scanf("%d",&n);
+ cd=countDigit(n);
+ printf(" No of Digits  = %d",cd);	
+}
+
+int countDigit(int n)
+{
+	if(n<=9)
+	{
+		return (1);
+	}
+	else
+	{
+		return (1+countDigit(n/10));
+	}
+}

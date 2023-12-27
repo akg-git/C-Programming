@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+	int n,d;
+	printf("Enter a number :");
+	scanf("%d",&n);
+	int ed=0,od=0;
+	while(n>0)
+	{
+		d=n%10;
+		if(d%2==0)
+			ed++;
+		else
+			od++;
+		n=n/10;
+	}
+	printf("Even digits : %d",ed);
+	printf("Odd digits : %d",od);
+}

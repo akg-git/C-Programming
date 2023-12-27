@@ -1,0 +1,20 @@
+/*Count 1s in binary number*/
+
+#include<stdio.h>
+
+int main()
+{
+	int n;
+	printf("Enter a binary number: ");
+	scanf("%d",&n);
+	
+	int c1 =0;
+	while(n)
+	{
+		n=n&(n-1);
+		c1++;
+	}
+	
+	printf("No of 1s in %d = %d",n,c1);
+	
+}

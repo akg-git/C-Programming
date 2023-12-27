@@ -1,0 +1,20 @@
+//wap to find out the power,base and exponent is given
+
+#include<stdio.h>
+int main()
+{
+   int base, exponent;
+   long result= 1;
+   printf("Base: ");
+   scanf("%d", &base);
+   printf("Exponent: ");
+   scanf("%d", &exponent);
+
+   while (exponent != 0)
+   {
+      result= *= base;
+      --exponent;
+   }
+   printf("Answer = %ld", result);
+   return 0;
+}

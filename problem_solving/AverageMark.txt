@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float m1, m2, m3, avg;
+
+    printf("Enter Subject1 mark: ");
+    scanf("%f", &m1);
+    
+    printf("Enter Subject2 mark: ");
+    scanf("%f", &m2);
+    
+    printf("Enter Subject3 mark: ");
+    scanf("%f", &m3);
+
+    avg = (m1 + m2 + m3) / 3.0f;
+
+    printf("The average marks is: %.2f\n", avg);
+
+}
