@@ -1,0 +1,25 @@
+/*Check ith bit is Set or not in binary number*/
+
+#include<stdio.h>
+
+int setCheck(n,i)
+{
+    return (n&(1<<i));
+}
+
+int main()
+{
+	int n;
+	printf("Enter a binary number: ");
+	scanf("%d",&n);
+	
+	int i;
+	printf("Enter position: ");
+	scanf("%d",&i);
+	
+	if(setCheck(n,i))
+	   printf("%d position is Set",i);
+	else
+	   printf("%d position is not Set",i);
+	return 1;
+}
